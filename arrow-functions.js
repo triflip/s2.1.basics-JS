@@ -38,4 +38,24 @@ class Person {
 
 const user = new Person ("Toni");
 
-console.log(user.greet());
+//console.log(user.greet());
+
+
+// --- Nivell 2 ---
+
+/*
+Exercici 4
+Funció de fletxa dins d'un loop:
+ Crea una funció anomenada printNumbers que accepti un array de números i utilitzi 
+ un loop for per imprimir cada número a la consola utilitzant una funció de fletxa. */ 
+
+ const numbers = [1, 2, 3, 4];
+ 
+ const printNumbers = function(arr)  {
+     for (let index = 0; index < arr.length; index++) {
+          const showNumber = (num) => console.log(num);
+          showNumber(arr[index])
+        }
+    };
+    
+ printNumbers(numbers);
