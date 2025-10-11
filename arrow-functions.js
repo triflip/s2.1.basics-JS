@@ -4,7 +4,7 @@ Conversió de funcions:
  Converteix-la en una funció de fletxa. Per exemple: function add(a, b) {return a + b;}.
  */
 
- //const add = (a, b) => a + b;
+ const add = (a, b) => a + b;
 
  //console.log(add(2, 9));
 
@@ -15,12 +15,9 @@ Crea una funció de fletxa anomenada randomNumber que no necessiti
 paràmetres i que retorni un número aleatori entre 0 i 100.
 */
 
-let randomNumber = () => Math.random();
+const randomNumber = () =>  Math.floor(Math.random() * 100);
 
-
-
-//console.log(randomNumber());
-
+//console.log(randomNumber())
 
 /*
 Exercici 3
@@ -49,13 +46,27 @@ Funció de fletxa dins d'un loop:
  Crea una funció anomenada printNumbers que accepti un array de números i utilitzi 
  un loop for per imprimir cada número a la consola utilitzant una funció de fletxa. */ 
 
- const numbers = [1, 2, 3, 4];
+// const numbers = [1, 2, 3, 4];
  
- const printNumbers = function(arr)  {
-     for (let index = 0; index < arr.length; index++) {
-          const showNumber = (num) => console.log(num);
-          showNumber(arr[index])
-        }
-    };
+// const printNumbers = function(arr)  {
+//      for (let index = 0; index < arr.length; index++) {
+//          const showNumber = (num) => console.log(num);
+//           showNumber(arr[index])
+//         }
+//     };
     
- printNumbers(numbers);
+// printNumbers(numbers);
+
+ /* Exercici 5
+Funció de fletxa amb 'setTimeout': 
+Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.  */
+
+const showMessage = () => {
+    setTimeout(() => {
+        console.log("See u soon")
+    }, 3000);
+};
+        console.log("Bye!")
+
+showMessage();
+
