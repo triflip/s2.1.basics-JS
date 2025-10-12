@@ -29,3 +29,24 @@ function numbers(num1, num2) {
     console.log(`The add of ${num1} and ${num2} is ${num1 + num2}`);
 }
 calculator(5, 9, numbers);
+
+/* Nivell 2
+
+
+Exercici 3
+Ús de callbacks en funcions asíncrones: 
+Escriu una funció esperarISaludar que accepti dos paràmetres: un nom i una funció de callback. 
+La funció ha d'esperar 2 segons i llavors invocar la funció de callback, passant el nom com a paràmetre. */
+
+function waitAndGeet(name, cb) {
+    console.log("Waiting for two seconds..");
+    setTimeout(() => {
+    cb(name);
+  }, 2000);
+    
+    }
+
+function person(name){
+    console.log(`Hi ${name}!`);
+}
+waitAndGeet("Erik", person);
