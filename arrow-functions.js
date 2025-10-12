@@ -61,12 +61,12 @@ Funció de fletxa dins d'un loop:
 Funció de fletxa amb 'setTimeout': 
 Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.  */
 
-const showMessage = () => {
-    setTimeout(() => {
-        console.log("See u soon")
-    }, 3000);
-};
-        console.log("Bye!")
+// const showMessage = () => {
+//     setTimeout(() => {
+//         console.log("See u soon")
+//     }, 3000);
+// };
+//         console.log("Bye!")
 
-showMessage();
+// showMessage();
 
