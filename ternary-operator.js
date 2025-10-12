@@ -33,3 +33,28 @@ num1 > num2 ? "Num1 is bigger" : "Num2 is bigger";
 console.log(smallBigNumber)
 */
 
+/* 
+Nivell 2
+
+Exercici 3
+Ús enllaçat d'operadors ternaris: 
+Escriu una expressió que utilitzi enllaços d'operadors ternaris per determinar
+si un número és positiu, negatiu o zero.
+
+Operador ternari amb funcions: Crea una funció trobarMaxim que accepti tres paràmetres
+ (a, b, c) i utilitzi l'operador ternari per determinar el valor màxim.
+
+*/
+let num = -5;
+
+const negativePositive = 
+    num === 0 ? "The number is zero" : 
+    num > 0 ? "The number is positive" : "The number is negative";
+
+console.log(negativePositive);
+
+function findMaxValue(a, b, c) {
+    console.log( a > b && a > c ? "A is the maximum value" : 
+        b > a && b > c ? "B is the maximum value" : "C is the maximum value");
+}
+findMaxValue(4, 8, 32)
