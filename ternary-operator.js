@@ -44,17 +44,36 @@ si un número és positiu, negatiu o zero.
 Operador ternari amb funcions: Crea una funció trobarMaxim que accepti tres paràmetres
  (a, b, c) i utilitzi l'operador ternari per determinar el valor màxim.
 
-*/
-let num = -5;
-
-const negativePositive = 
-    num === 0 ? "The number is zero" : 
-    num > 0 ? "The number is positive" : "The number is negative";
-
-console.log(negativePositive);
-
-function findMaxValue(a, b, c) {
+ let num = -5;
+ 
+ const negativePositive = 
+ num === 0 ? "The number is zero" : 
+ num > 0 ? "The number is positive" : "The number is negative";
+ 
+ console.log(negativePositive);
+ 
+ function findMaxValue(a, b, c) {
     console.log( a > b && a > c ? "A is the maximum value" : 
-        b > a && b > c ? "B is the maximum value" : "C is the maximum value");
+    b > a && b > c ? "B is the maximum value" : "C is the maximum value");
 }
 findMaxValue(4, 8, 32)
+*/
+
+/* Nivell 3
+
+Exercici 4
+Operador ternari dins un bucle: 
+Escriu una funció parOImpar que accepti un array de números i utilitzi un bucle per a recórrer l'array. 
+Dins del bucle, utilitza l'operador ternari per a determinar si cada número és parell o imparell. */
+
+const arrayNumbers = [2, 67, 94, 38, 79, 53, 22];
+
+function oddEven() {
+    for (let i = 0; i < arrayNumbers.length; i++) {
+        let result = arrayNumbers[i] % 2 == 0 
+        ? `The number ${arrayNumbers[i]} is even` 
+        : `The number ${arrayNumbers[i]} is odd` ;       
+        console.log(result )
+        }
+}
+oddEven()
