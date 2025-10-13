@@ -57,12 +57,17 @@ const resultat = nums5
   .filter(n => n >= 10)
   .map(n => n * 2)
   .reduce((acc, val) => acc + val, 0);
-  
+
 console.log(resultat); 
 
-
 /*
-Nivell 3
 Exercici 6
-Every / Some: Usa every i some per a determinar si tots o alguns dels elements de l'array [11, 12, 13, 14] són majors que 10, respectivament
+Every / Some: 
+Usa every i some per a determinar si tots o alguns dels elements de l'array [11, 12, 13, 14] són majors que 10, respectivament
 */
+const nums6 = [11, 12, 13, 14];
+
+console.log(nums6.every(n => n > 10)); 
+console.log(nums6.some(n => n > 13));  
+
+
