@@ -35,3 +35,17 @@ async function mostraSalutacio() {
   console.log(resultat);
 }
 mostraSalutacio();
+
+/* Exercici 5
+Gestió d'errors amb async/await: Modifica la funció de l'exercici 4 per a que capturi qualsevol 
+possible error utilitzant un bloc try/catch. */
+
+async function gestionaSalutacio() {
+  try {
+    const resultat = await saluda("Hola");
+    console.log(resultat);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+gestionaSalutacio();
