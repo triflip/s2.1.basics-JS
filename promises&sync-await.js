@@ -25,3 +25,13 @@ Promesa amb reject: Crea una promesa que es resolgui després de 2 segons si l'i
     }, 2000);
   });
 }
+/* Exercici 4
+Ús de async/await: 
+Escriu una funció asíncrona que utilitzi la funció await per a esperar el resultat de la promesa creada a l'exercici 1, 
+i que després imprimeixi aquest resultat a la consola. */
+
+async function mostraSalutacio() {
+  const resultat = await promesa;
+  console.log(resultat);
+}
+mostraSalutacio();
