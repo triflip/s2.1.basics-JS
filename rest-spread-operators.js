@@ -67,6 +67,16 @@ Crea una funció que accepti tres arguments. Després, crea una array amb tres e
 i crida la funció utilitzant l'operador spread amb aquesta array.
 */
 
+function showFruits(a, b, c) {
+    console.log(a, b, c);
+}
+const fruits = ["orange", "watermelon", "apple"];
+
+showFruits(...fruits);
+
+console.log("Showing with:", fruits);
+
+
 /*
 Exercici 6
 Fusionant Objectes amb Spread: 
