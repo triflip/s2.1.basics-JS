@@ -7,3 +7,9 @@ const promesa = new Promise((resolve) => {
     resolve("Hola, món");
   }, 2000);
 });
+
+/* Exercici 2
+Utilització d'una Promesa: Utilitza la promesa creada en l'exercici anterior. 
+Crea un .then que imprimeixi el resultat a la consola. */
+
+promesa.then(resultat => console.log(resultat)); 
