@@ -33,11 +33,17 @@ const superiorDeu = nums3.find( n => n > 10 );
 
 console.log(superiorDeu);
 
-
 /*
 Exercici 4
-Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a calcular la suma total dels números.
+Reduce: Teniu una array de números [13, 7, 8, 21]. 
+Fes servir la funció reduce per a calcular la suma total dels números.
 */
+
+const nums4 = [13, 7, 8, 21];
+const suma = nums4.reduce((acc, val) => acc + val, 0);
+
+console.log(suma); 
+
 /*
 Nivell 2
 */
