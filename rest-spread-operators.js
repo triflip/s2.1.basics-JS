@@ -50,6 +50,15 @@ Crea una array amb diversos elements. Utilitza destructuring i l'operador rest p
 els primers dos elements a variables, i després assignar la resta dels elements a una tercera variable.
 */
 
+const colors = ["red", "blue", "green", "yellow", "purple"];
+
+const [first, second, ...rest] = colors;
+
+console.log("First color:", first);
+console.log("Second color:", second);
+console.log("Rest:", rest);
+
+
 /*
 Nivell 3
 Exercici 5
