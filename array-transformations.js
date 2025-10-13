@@ -18,16 +18,22 @@ Crea una nova array que només contingui els números parells.
 */
 
 const nums2 = [1, 2, 3, 4];
-const parells = nums2.filter(n=> n % 2 === 0);
+const parells = nums2.filter( n => n % 2 === 0 );
 
 console.log(parells);
 
-
 /*
-
 Exercici 3
-Find: Teniu una array de números [1, 10 , 8, 11]. Utilitza la funció find per a trobar el primer número que és major a 10.
+Find: Teniu una array de números [1, 10 , 8, 11]. 
+Utilitza la funció find per a trobar el primer número que és major a 10.
 */
+
+const nums3 = [1, 10, 8, 11];
+const superiorDeu = nums3.find( n => n > 10 );
+
+console.log(superiorDeu);
+
+
 /*
 Exercici 4
 Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a calcular la suma total dels números.
