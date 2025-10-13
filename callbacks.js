@@ -43,10 +43,28 @@ function waitAndGeet(name, cb) {
     setTimeout(() => {
     cb(name);
   }, 2000);
-    
-    }
+}
 
 function person(name){
     console.log(`Hi ${name}!`);
 }
+
 waitAndGeet("Erik", person);
+
+/* Exercici 4
+Callbacks amb arrays: 
+Escriu una funció processarElements que accepti dos paràmetres: un array i una funció de callback. 
+La funció processarElements ha d'invocar la funció de callback per cada element de l'array. */
+
+const elements = [1, 2, 3, 4]
+
+function processElements(arr, cbk) {
+    cbk(arr);
+}
+
+function loop(array) {
+    for (let index = 0; index < array.length; index++) {
+         console.log(array[index]);        
+    }
+}
+processElements(elements, loop);
