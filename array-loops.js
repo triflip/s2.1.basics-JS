@@ -46,3 +46,15 @@ for (let num of nums) {
   if (num === 5) break;
   console.log(num);
 }
+
+/* Exercici 6
+for-of amb index: Utilitza un bucle for-of per a imprimir a la 
+consola cada element de l'array i la seva posició (index): 
+let noms = ['Anna', 'Bernat', 'Clara'] */
+
+let names = ['Anna', 'Bernat', 'Clara'];
+let index = 0;
+for (let nom of names) {
+  console.log(`Posició ${index}: ${nom}`);
+  index++;
+}
