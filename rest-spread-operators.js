@@ -80,9 +80,13 @@ console.log("Showing with:", fruits);
 /*
 Exercici 6
 Fusionant Objectes amb Spread: 
-Crea dos objectes amb propietats diferents. Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou.
+Crea dos objectes amb propietats diferents. 
+Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou.
 */
 
-/*
+const personalInfo = { name: "Jan", city: "Barcelona" };
+const professionalInfo = { job: "Football player", position: "Pivot" };
 
-*/
+const fullProfile = {...personalInfo, ...professionalInfo};
+
+console.log("Combined profile:", fullProfile);
