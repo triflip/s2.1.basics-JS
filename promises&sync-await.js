@@ -49,3 +49,12 @@ async function gestionaSalutacio() {
   }
 }
 gestionaSalutacio();
+
+/* Exercici 6
+Promise.all: Crea dues promeses que es resolguin després de 2 i 3 segons, respectivament. Utilitza Promise.all per a esperar que ambdues promeses es resolguin, 
+i imprimeix els resultats a la consola. */
+
+const p1 = new Promise(resolve => setTimeout(() => resolve("Primer"), 2000));
+const p2 = new Promise(resolve => setTimeout(() => resolve("Segon"), 3000));
+
+Promise.all([p1, p2]).then(resultats => console.log(resultats));
