@@ -20,15 +20,21 @@ Crea una funció 'suma' que utilitzi l'operador rest per a acceptar
 un nombre indeterminat d'arguments i retornar la seva suma.
 */
 
+function suma(...nums) {
+    const total = nums.reduce((acc, val) => acc + val, 0);
+    return total;
+}
+
+console.log(suma(4, 6, 5, 9));
 /* 
 Nivell 2
-
 
 Exercici 3
 Copiant objectes amb Spread: 
 Crea un objecte 'objecte1'. Després crea un segon objecte, 'objecte2', que sigui una còpia de 'objecte1' 
 utilitzant l'operador spread. Canvia una propietat de 'objecte2' i comprova que 'objecte1' no ha canviat.
 */
+
 
 /* 
 Exercici 4
