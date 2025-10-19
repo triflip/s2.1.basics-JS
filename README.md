@@ -99,6 +99,20 @@ Or open them in **VS Code** and run directly from the editor’s console.
 
 ---
 
+## 🧰 Tools & Libraries Used
+
+This project leverages the following tools and technologies to enhance development and presentation:
+
+- **JavaScript (ES6+)** — Core language for all exercises.
+- **HTML & CSS** — Used to structure and style the interface and documentation.
+- **highlight.js** — For syntax highlighting of code blocks in the browser.
+- **VS Code** — Preferred code editor with integrated terminal and extensions.
+- **Live Server** — For real-time preview of HTML/CSS/JS files in the browser.
+- **Git Bash** — Terminal used for running scripts and managing Git.
+- **Git & GitHub** — Version control and collaboration.
+
+---
+
 ## 🌐 Deployment
 
 This project is intended for local development and learning purposes. No production deployment is required.
