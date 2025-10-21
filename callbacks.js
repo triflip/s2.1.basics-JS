@@ -39,7 +39,7 @@ Escriu una funció esperarISaludar que accepti dos paràmetres: un nom i una fun
 La funció ha d'esperar 2 segons i llavors invocar la funció de callback, passant el nom com a paràmetre. */
 
 function waitAndGeet(name, cb) {
-    console.log("Waiting for two seconds..");
+    console.log("Waiting Erick for two seconds..");
     setTimeout(() => {
     cb(name);
   }, 2000);

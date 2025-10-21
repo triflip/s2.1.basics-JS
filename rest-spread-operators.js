@@ -35,10 +35,10 @@ Crea un objecte 'objecte1'. Després crea un segon objecte, 'objecte2', que sigu
 utilitzant l'operador spread. Canvia una propietat de 'objecte2' i comprova que 'objecte1' no ha canviat.
 */
 
-const objecte1 = {name:"Lena", age:"20", city: "Barcelona"};
+const objecte1 = {name:"Lena", age:"9", city: "Barcelona"};
 const objecte2 = {...objecte1};
 
-objecte2.age= 21;
+objecte2.age= 10;
 
 console.log("Original:", objecte1);
 console.log("Còpia modificada:", objecte2);
@@ -85,7 +85,7 @@ Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou.
 */
 
 const personalInfo = { name: "Jan", city: "Barcelona" };
-const professionalInfo = { job: "Football player", position: "Pivot" };
+const professionalInfo = { job: "Football player", position: "Defender" };
 
 const fullProfile = {...personalInfo, ...professionalInfo};
 
